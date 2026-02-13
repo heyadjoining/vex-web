@@ -38,7 +38,7 @@ function TiltCard({ feature, index }: { feature: typeof features[0]; index: numb
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="feature-card group relative p-8 border border-[var(--color-line)] bg-transparent hover:bg-white/[0.015] transition-[background-color,border-color,box-shadow] duration-500 overflow-hidden"
+                className="feature-card group relative p-8 border-y border-l border-[var(--color-line)] bg-transparent hover:bg-white/[0.015] transition-[background-color,border-color,box-shadow] duration-500 overflow-hidden"
             >
                 {/* Corner bracket — top-left red accent, expands on hover */}
                 <div className="corner-bracket corner-bracket--tl absolute top-0 left-0 w-5 h-5 group-hover:w-6 group-hover:h-6 pointer-events-none transition-all duration-500">
@@ -71,14 +71,14 @@ export function Features() {
                 <div className="section-header max-w-2xl mb-16">
                     <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="section-eyebrow text-[10px] font-mono text-primary tracking-[0.2em] uppercase mb-3">What we build</motion.div>
                     <motion.h2 initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.05 }} className="section-title text-3xl md:text-4xl tracking-[-0.03em] mb-4 text-white leading-[1.15]">
-                        Messaging, Rewritten
+                        Messaging, <span className="font-ttnp font-normal relative z-10 py-4 px-3 -my-4 -mx-2 bg-background/5">Rewritten</span>
                     </motion.h2>
                     <motion.p initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="section-desc text-[15px] text-zinc-500 leading-relaxed max-w-lg">
                         An end-to-end encrypted platform for individuals, teams, and communities.
                     </motion.p>
                 </div>
                 {/* Grid w/ shared borders — line-based layout */}
-                <div className="features-grid grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-[var(--color-line-soft)]">
+                <div className="features-grid grid md:grid-cols-2 lg:grid-cols-4 bg-[var(--color-line-soft)]">
                     {features.map((f, i) => (
                         <div key={i} className="bg-background">
                             <TiltCard feature={f} index={i} />

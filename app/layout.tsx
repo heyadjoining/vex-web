@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Chivo_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const inter = Inter({
@@ -13,6 +14,12 @@ const chivoMono = Chivo_Mono({
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500"],
+});
+
+const ttnp = localFont({
+  src: "./fonts/ThatThatNewPixel-ItalicVF.ttf",
+  variable: "--font-ttnp",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -30,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} ${chivoMono.variable} antialiased`}>
+      <body className={`${inter.variable} ${chivoMono.variable} ${ttnp.variable} antialiased`}>
         {children}
         <div className="grain-overlay" aria-hidden="true" />
       </body>

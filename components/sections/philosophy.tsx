@@ -67,7 +67,7 @@ function ScrambleText({ text, delay = 0 }: { text: string; delay?: number }) {
 const line1 = "Modern communication platforms";
 const line2 = "trade convenience for visibility.";
 const line3 = "Vex reverses that equation.";
-const emphasisLine = "Privacy should not be optional, premium, or conditional.";
+
 
 export function Philosophy() {
     return (
@@ -109,7 +109,7 @@ export function Philosophy() {
                             transition={{ duration: 0.7, delay: 0.5 }}
                             className="philosophy-emphasis text-2xl md:text-3xl lg:text-4xl font-light leading-[1.3] tracking-tight mb-12 text-white"
                         >
-                            {emphasisLine}
+                            Privacy <span className="font-ttnp font-normal relative z-10 py-4 px-3 -my-4 -mx-2 bg-background/5">should not</span> be optional, <br></br>premium, or conditional.
                         </motion.p>
 
                         <motion.div
@@ -128,6 +128,6 @@ export function Philosophy() {
                 </div>
             </div>
 
-        </section>
+        </section >
     );
 }

@@ -38,8 +38,8 @@ function Counter({ target, suffix = "" }: { target: string; suffix?: string }) {
     return <span ref={ref}>{count.toLocaleString()}{suffix}</span>;
 }
 
-const line1 = ["Private", "by", "design."];
-const line2 = ["Powerful", "by", "default."];
+const line1 = ["Human", "Right."];
+const line2 = ["Privacy", "is", "a"];
 
 export function Hero() {
     const ref = useRef<HTMLDivElement>(null);
@@ -110,7 +110,7 @@ export function Hero() {
                         </span>
                         <span className="hero-headline__line1 block text-white">
                             {line1.map((w, i) => (
-                                <motion.span key={i} initial={{ opacity: 0, y: 30, filter: "blur(8px)" }} animate={{ opacity: 1, y: 0, filter: "blur(0px)" }} transition={{ duration: 0.55, delay: 0.5 + i * 0.08 }} className="inline-block mr-[0.22em] bg-clip-text text-transparent bg-gradient-to-r from-[#E70000] to-[#ff2a2a]">
+                                <motion.span key={i} initial={{ opacity: 0, y: 30, filter: "blur(8px)" }} animate={{ opacity: 1, y: 0, filter: "blur(0px)" }} transition={{ duration: 0.55, delay: 0.5 + i * 0.08 }} className={`inline-block mr-[0.22em] text-[#E70000] ${i === 0 ? "font-ttnp font-normal relative z-10 py-4 px-3 -my-4 -mx-2" : ""}`}>
                                     {w}
                                 </motion.span>
                             ))}
@@ -127,7 +127,7 @@ export function Hero() {
 
                     {/* Sub */}
                     <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 1 }} className="hero-subtitle text-base md:text-lg text-zinc-500 mb-14 max-w-lg mx-auto leading-relaxed font-light">
-                        End-to-end encrypted messaging for people.
+                        End-to-end encrypted messaging for anyone
                     </motion.p>
 
                     {/* CTAs */}

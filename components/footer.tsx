@@ -52,7 +52,7 @@ export function Footer() {
                 <p className="footer-bottom__copy text-[11px] text-zinc-700 font-mono">© {new Date().getFullYear()} Vex Inc.</p>
                 <div className="footer-bottom__socials flex items-center gap-0.5">
                     <Link href="https://github.com/vex-chat" target="_blank" className="footer-social text-zinc-700 hover:text-white transition-colors p-2 hover:bg-white/[0.02]"><HugeiconsIcon icon={GithubIcon} size={14} /></Link>
-                    <Link href="https://twitter.com/vex" target="_blank" className="footer-social text-zinc-700 hover:text-white transition-colors p-2 hover:bg-white/[0.02]"><HugeiconsIcon icon={TwitterIcon} size={14} /></Link>
+                    <Link href="https://x.com/vexwtf7" target="_blank" className="footer-social text-zinc-700 hover:text-white transition-colors p-2 hover:bg-white/[0.02]"><HugeiconsIcon icon={TwitterIcon} size={14} /></Link>
                 </div>
             </div>
         </footer>

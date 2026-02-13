@@ -17,7 +17,7 @@ export function Audience() {
                 <div className="section-header max-w-2xl mb-16">
                     <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="section-eyebrow text-[10px] font-mono text-primary tracking-[0.2em] uppercase mb-3">Built for</motion.div>
                     <motion.h2 initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.05 }} className="section-title text-3xl md:text-4xl tracking-[-0.03em] text-white leading-[1.15]">
-                        Designed for Real Use
+                        Designed for <span className="font-ttnp font-normal relative z-10 py-4 px-3 -my-4 -mx-2 bg-background/5">Real</span> Use
                     </motion.h2>
                 </div>
 

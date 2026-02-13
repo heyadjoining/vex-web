@@ -30,7 +30,7 @@ export function Freedom() {
                     <motion.div style={{ y: textY }}>
                         <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="section-eyebrow text-[10px] font-mono text-primary tracking-[0.2em] uppercase mb-5">How Vex Differs</motion.div>
                         <motion.h2 initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="section-title freedom-title text-4xl md:text-5xl lg:text-6xl tracking-[-0.035em] mb-7 text-white leading-[0.95]">
-                            Free from<br />Surveillance
+                            <span className="font-ttnp font-normal relative z-10 py-4 px-3 -my-4 -mx-2 bg-background/5">Free</span> from<br />Surveillance
                         </motion.h2>
                         <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="section-desc text-base md:text-lg text-zinc-500 mb-16 leading-relaxed max-w-xl mx-auto font-light">
                             Vex was designed to operate without central visibility into your conversations. We cannot monitor, scan, or analyze your messages — because we don&apos;t have access to them.

@@ -53,7 +53,7 @@ export function Navbar() {
                     <Link href="https://github.com/vex-chat" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors p-2">
                         <HugeiconsIcon icon={GithubIcon} size={16} />
                     </Link>
-                    <Link href="https://twitter.com/vex" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors p-2">
+                    <Link href="https://x.com/vexwtf7" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors p-2">
                         <HugeiconsIcon icon={TwitterIcon} size={16} />
                     </Link>
                     <div className="ml-2">

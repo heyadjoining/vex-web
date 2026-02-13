@@ -8,6 +8,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
   --font-mono: var(--font-chivo-mono);
+  --font-ttnp: var(--font-ttnp), monospace;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -141,6 +142,31 @@
   mix-blend-mode: overlay;
 }
 
+/* ─── CRT Scanlines ─── */
+.crt-scanlines {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: repeating-linear-gradient(to bottom,
+      transparent 0px,
+      transparent 2px,
+      rgba(200, 0, 0, 0.75) 2px,
+      rgba(200, 0, 0, 0.75) 3px);
+  background-size: 100% 3px;
+  animation: crt-scroll 8s linear infinite;
+}
+
+@keyframes crt-scroll {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 100%;
+  }
+}
+
 /* ─── Bracket Glow ─── */
 /* Apply to any element with corner brackets for a noise-textured glow on hover.
    The element MUST have position: relative and overflow: hidden. */
@@ -259,6 +285,10 @@
   box-shadow: 0px 10px 20px -10px #e7000088;
 }
 
+.line-btn .group-hover .corner-bracket--tl {
+  transform: translate(10%, 10%);
+}
+
 /* Comparison Section */
 .comparison-table,
 .audience-rows,
@@ -271,13 +301,11 @@
 .section-divider {
   display: flex;
   gap: 12px;
-  margin: 40px 0;
 }
 
 .section-divider__line {
   flex: 1;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #333, transparent);
 }
 
 .section-divider__label {
