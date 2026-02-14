@@ -33,7 +33,7 @@ const sizeClasses: Record<LineButtonSize, string> = {
 
 const variantClasses: Record<LineButtonVariant, string> = {
     primary:
-        "bg-white text-black border-white hover:bg-zinc-100 shadow-[0_0_40px_-10px_rgba(231,0,0,0.25)] hover:shadow-[0_0_60px_-10px_rgba(231,0,0,0.35)]",
+        "bg-transparent text-zinc-400 border-[var(--color-line)] hover:bg-primary/[0.03] hover:text-white hover:border-primary/[0.2]",
     outline:
         "bg-transparent text-zinc-400 border-[var(--color-line)] hover:bg-primary/[0.03] hover:text-white hover:border-primary/[0.2]",
     ghost:

@@ -74,7 +74,7 @@ export function Philosophy() {
         <section id="philosophy" className="philosophy-section py-40 md:py-52 relative overflow-hidden">
             <ShaderBackground />
 
-            <div className="section-container max-w-7xl mx-auto px-6 relative z-10">
+            <div className="section-container max-w-5xl mx-auto px-6 relative z-10">
                 <div className="philosophy-inner grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 items-start">
                     {/* Left column — eyebrow + scramble */}
                     <div>
